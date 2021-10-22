@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Min Max array</title>
+    </head>
+    <body>
+       <header style="text-align: center; font-weight: bold;">Maximum/Minimum Element in Array</header>
+       <aside>
+       <h2>Problem Statement :</h2>
+       <h3>Write a program in any language to find the maximum and minimum element in an array.</h3>
+       </aside>
+       <div class="center" style="background-color: rgba(116, 142, 151, 0.3); float: left;">
+       <section>
+       	Sample Code in C:
+       <pre>
+       <code>
+        #include < bits/stdc++.h >
+        using namespace std ;
+        
+        int main()
+        {
+            int n;
+            cin >> n ;
+            vector < int > v(n);
+            for(int i=0 ; i < n ; i++)
+                cin >> v[i];
+            int mx = v[0] , mn = v[0];
+            for(int i=0 ; i < n ; i++)
+            {
+                mx = max(mx , v[i]);
+                mn = min(mn , v[i]);
+            }
+            printf("minimum of array is : %d",min);
+            printf("\nmaximum of array is : %d",max);
+            return 0;
+        }
+       </code>
+   </pre>
+       </section>
+   </div>
+   <div class="center" style="width: 20%;margin-right: 30%;">
+   <b>Sample Input : </b><br>
+   <kbd>6 <br>
+    54 51 75 41 40 103</kbd>
+   <br><br>
+   <b>Sample Output : </b><br>
+    <samp>minimum of array is : 41<br>
+    maximum of array is : 103</samp><br>
+   <br>
+   <b>variable Used :</b> <br>
+   <var>int v,i,n,mn,mx</var> are the variable used for these code<br><br>
+   <b>Time Complexity :</b><br>
+   <small> O(n)</small><br><br>
+   <b>Space Complexity :</b><br>
+   <small> O(1)</small><br><br>
+   <b>Reference :</b><br>
+   <a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a>
+   </div>
+       <style type="text/css">
+       	.center {
+			  width: 30%;
+			  padding: 10px;
+			  background-color: rgba(116, 142, 151, 0.3);
+			  float: right;
+			}
+       </style>
+    </body>
+</html>
